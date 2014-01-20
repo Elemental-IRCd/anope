@@ -590,13 +590,6 @@ int doValidHost(const char *host, int type)
         if (host[len - 1] == '.') {
             return 0;
         }
-        /**
-	 * Ultimate3 dosnt like a non-dotted hosts at all, nor does unreal,
-	 * so just dont allow them.
-	 **/
-        if (dots == 0) {
-            return 0;
-        }
 
         break;
     }
