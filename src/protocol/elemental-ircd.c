@@ -38,7 +38,7 @@ IRCDVar myIrcd[] = {
      "+oiS",                     /* Used by BotServ Bots */
      2,                         /* Chan Max Symbols     */
      "-cijlmnpstrgzQF",         /* Modes to Remove */
-     "+o",                      /* Channel Umode used by Botserv bots */
+     "+ao",                      /* Channel Umode used by Botserv bots */
      1,                         /* SVSNICK */
      1,                         /* Vhost  */
      1,                         /* Has Owner */
@@ -55,7 +55,7 @@ IRCDVar myIrcd[] = {
      1,                         /* Supports SGlines     */
      1,                         /* Supports SQlines     */
      1,                         /* Supports SZlines     */
-     0,                         /* Supports Halfop +h   */
+     1,                         /* Supports Halfop +h   */
      3,                         /* Number of server args */
      1,                         /* Join 2 Set           */
      1,                         /* Join 2 Message       */
@@ -63,11 +63,11 @@ IRCDVar myIrcd[] = {
      0,                         /* TS Topic Forward     */
      0,                         /* TS Topci Backward    */
      0,                         /* Protected Umode      */
-     0,                         /* Has Admin            */
+     1,                         /* Has Admin            */
      1,                         /* Chan SQlines         */
      0,                         /* Quit on Kill         */
      0,                         /* SVSMODE unban        */
-     0,                         /* Has Protect          */
+     1,                         /* Has Protect          */
      0,                         /* Reverse              */
      0,                         /* Chan Reg             */
      0,                         /* Channel Mode         */
