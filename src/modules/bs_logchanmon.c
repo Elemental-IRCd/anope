@@ -20,7 +20,7 @@ int AnopeInit( int argc, char **argv )
       return MOD_STOP;
     }
 
-    anope_cmd_nick( BotNick, "Service to protect the service log channel.", "+BS" );
+    anope_cmd_nick( BotNick, "Service to protect the service log channel.", "+BSo" );
     anope_cmd_join( BotNick, LogChannel, time( NULL ) );
     anope_cmd_mode( BotNick, LogChannel, "+o %s", BotNick );
     return MOD_CONT;

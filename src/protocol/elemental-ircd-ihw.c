@@ -1,5 +1,6 @@
-/* Charybdis IRCD functions
+/* Elemental-IRCD functions
  *
+ * (C) 2014 Sam Dodrill <shadow.h511 -at- gmail.com>
  * (C) 2006 William Pitcock <nenolod -at- charybdis.be>
  * (C) 2003-2013 Anope Team
  * Contact us at team@anope.org
@@ -16,7 +17,7 @@
 #include "version.h"
 
 IRCDVar myIrcd[] = {
-    {"Elemental-ircd 6.5",           /* ircd name */
+    {"Elemental-IRCd+ihw 6.5",           /* ircd name */
      "+oiS",                     /* nickserv mode */
      "+oiS",                     /* chanserv mode */
      "+oiS",                     /* memoserv mode */
@@ -37,13 +38,13 @@ IRCDVar myIrcd[] = {
      "+oiS",                     /* Global alias mode   */
      "+oiS",                     /* Used by BotServ Bots */
      2,                         /* Chan Max Symbols     */
-     "-cijlmnpstrgzQF",         /* Modes to Remove */
+     "-cijlmnpstrgzF",         /* Modes to Remove */
      "+o",                      /* Channel Umode used by Botserv bots */
      1,                         /* SVSNICK */
      1,                         /* Vhost  */
      1,                         /* Has Owner */
-     "+y",                      /* Mode to set for an owner */
-     "-y",                      /* Mode to unset for an owner */
+     "+q",                      /* Mode to set for an owner */
+     "-q",                      /* Mode to unset for an owner */
      "+a",                      /* Mode to set for chan admin */
      "-a",                      /* Mode to unset for chan admin */
      NULL,                      /* Mode On Reg          */
